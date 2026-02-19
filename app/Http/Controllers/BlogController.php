@@ -11,7 +11,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Blog/index'); // make this file in resources/js/Pages/Blog/Index.jsx
     }
 
     /**
