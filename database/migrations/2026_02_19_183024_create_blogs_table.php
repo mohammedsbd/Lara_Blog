@@ -13,9 +13,9 @@ public function up(): void
 {
     Schema::create('blogs', function (Blueprint $table) {
         $table->id();
-        $table->string('title');
-        $table->text('description');
-        $table->string('banner_img')->nullable();
+        $table->string('title', 50);
+        $table->text('description, ')->nullable();
+        $table->text('banner_img')->nullable();
 
         // Foreign key
         $table->foreignId('user_id')
